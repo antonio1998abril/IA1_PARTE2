@@ -1,0 +1,43 @@
+<html>
+<head>
+    <script src="p5.js"></script>
+
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        #status{
+        float:right;        
+        position: absolute;
+        left: 850px;
+        top: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+
+<button id="GBFS" class="button">Primero el mejor</button>
+<button id="ASTAR" class="button">A*</button>
+<button id="Random" class="button">Mazo aleatorio</button>
+<button id="Clear" class="button">Limpiar</button>
+<p></p>
+<p id="status"></p>
+<div>
+    <input type="checkbox" id="ShowCost" position="align"> Mostrar constos
+</div>
+<script src="sketch.js"></script>
+<script src="alghorithms.js"></script>
+<script src="genetic.js"></script>
+
+</body>
+</html>
